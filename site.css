@@ -31,3 +31,97 @@ footer a{color:var(--muted)}
 .home{display:inline-block;margin-bottom:1.5rem;text-decoration:none}
 .home img{width:11rem;height:auto;display:block}
 .updated{color:var(--muted);margin-top:0}
+body.invite{background:radial-gradient(70rem 34rem at 50% -8rem,rgba(31,90,140,.45),rgba(11,19,32,0) 70%) no-repeat
+var(--navy)}
+.bar{margin:0 0 1.5rem}
+.bar .home{display:block;width:max-content;margin:0}
+.bar .home img{width:9.5rem}
+.pill{display:inline-block;border:1px solid rgba(79,209,197,.55);border-radius:999px;padding:.3rem 1rem;font-weight:600;
+font-size:.95rem;text-decoration:none;color:var(--turq);white-space:nowrap}
+.pill:hover{background:var(--turq);color:var(--navy)}
+.hero{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--deep);
+box-shadow:0 1.75rem 3.5rem -1.75rem rgba(43,108,163,.8);margin:0 0 1.6rem}
+.kicker{display:inline-flex;align-items:center;gap:.55rem;border:1px solid rgba(79,209,197,.4);
+background:rgba(79,209,197,.08);border-radius:999px;padding:.3rem .9rem;font-size:.74rem;font-weight:600;
+letter-spacing:.15em;text-transform:uppercase;color:var(--turq);margin:0 0 .9rem}
+.kicker::before{content:"";flex:none;width:.5rem;height:.5rem;border-radius:50%;background:var(--turq);
+animation:pulse 2s infinite}
+@keyframes pulse{from{box-shadow:0 0 0 0 rgba(79,209,197,.6)}to{box-shadow:0 0 0 .55rem rgba(79,209,197,0)}}
+@media (prefers-reduced-motion:reduce){.kicker::before{animation:none}}
+.pitch h1{font-size:clamp(3rem,11.5vw,4.6rem);line-height:.95;margin:0 0 .9rem}
+.pitch h1 span{display:block}
+.pitch h1 span:last-child{color:var(--turq)}
+.pitch .lede{text-align:left;font-size:1.2rem;color:var(--foam);margin:0}
+.perks{display:grid;grid-template-columns:repeat(auto-fit,minmax(12.5rem,1fr));gap:.9rem;margin:2rem 0 0}
+.perk{border:1px solid var(--deep);border-radius:14px;background:#0E1A2C;overflow:hidden}
+.shot{position:relative}
+.shot img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.shot::after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(rgba(11,19,32,0),rgba(11,19,32,.86))}
+.shot h3{position:absolute;z-index:1;left:1rem;right:1rem;bottom:.55rem;margin:0;
+font:800 1.5rem/1.05 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;letter-spacing:.03em;
+text-shadow:0 1px 3px rgba(11,19,32,.9)}
+.perk p{margin:.65rem 1rem .95rem;color:var(--muted);line-height:1.45}
+.panel{position:relative;overflow:hidden;border:1px solid var(--deep);border-radius:16px;background:#0E1A2C;
+padding:1.5rem 1.25rem 1.35rem;margin:1.25rem 0 0}
+.panel::before{content:"";position:absolute;inset:0 0 auto;height:3px;
+background:linear-gradient(90deg,var(--atlantic) 50%,var(--turq) 50%)}
+.panel h2{margin:0 0 1rem}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(8rem,1fr));gap:1rem}
+.tile{border-left:3px solid var(--atlantic);padding:.1rem 0 .1rem .9rem}
+.tile:nth-child(even){border-left-color:var(--turq)}
+.tile b{display:block;font:800 clamp(2.7rem,10vw,3.5rem)/1 "Big Shoulders Display",Impact,sans-serif;
+text-transform:uppercase;letter-spacing:.02em;color:var(--foam)}
+.tile span{display:block;margin-top:.25rem;color:var(--muted);font-size:.98rem;line-height:1.35}
+.facts{margin:1.3rem 0 0;padding:1rem 0 0;border-top:1px solid var(--deep);color:var(--muted);font-size:.92rem}
+.facts ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.35rem 1.25rem;list-style:none;
+margin:.6rem 0 0;padding:0}
+.facts li{position:relative;padding-left:1.5rem;color:var(--foam);font-size:.98rem;line-height:1.45}
+.facts li::before{content:"✓";position:absolute;left:0;color:var(--turq);font-weight:700}
+.join{background:linear-gradient(165deg,#1F5A8C 0%,#16406B 40%,#0E2A47 100%);border-color:rgba(79,209,197,.5);
+box-shadow:0 1.75rem 3.5rem -2rem rgba(79,209,197,.6)}
+.join::before{display:none}
+.join h2{margin:0 0 1.2rem;font-size:2rem;line-height:1}
+.steps{list-style:none;margin:0;padding:0;counter-reset:step}
+.step{counter-increment:step;position:relative;padding:0 0 1rem 3.4rem}
+.step:last-child{padding-bottom:0}
+.step::before{content:counter(step);position:absolute;left:0;top:.3rem;width:2.5rem;height:2.5rem;border-radius:50%;
+box-sizing:border-box;border:2px solid var(--turq);background:var(--navy);color:var(--turq);
+font:800 1.4rem/calc(2.5rem - 4px) "Big Shoulders Display",Impact,sans-serif;text-align:center}
+.step::after{content:"";position:absolute;left:calc(1.25rem - 1px);top:3rem;bottom:-.1rem;width:2px;
+background:rgba(79,209,197,.4)}
+.step:last-child::after{display:none}
+.step .btn{display:flex;align-items:center;justify-content:space-between;gap:1rem;max-width:24rem;margin:0;
+padding:.85rem 1.15rem;font-size:1.08rem;border-radius:10px}
+.step .btn::after{content:"→";font-size:1.2rem;line-height:1}
+@media (max-width:26rem){.panel{padding-left:1rem;padding-right:1rem}.step{padding-left:3.1rem}
+.step .btn{padding:.85rem .9rem;font-size:1rem;gap:.5rem}}
+.note{margin:.45rem 0 0;color:#D6DEE8;font-size:.92rem;line-height:1.4}
+.help{display:flex;align-items:center;justify-content:center;gap:.7rem;margin:1.35rem 0 0;padding:1.1rem 0 0;
+border-top:1px solid rgba(242,238,230,.18)}
+.help .pill{border-color:var(--turq);background:rgba(11,19,32,.35)}
+.help .pill:hover{background:var(--turq)}
+.banner{position:relative;display:flex;align-items:flex-end;min-height:12.5rem;overflow:hidden;border-radius:16px;
+border:1px solid var(--deep);box-shadow:0 1.75rem 3.5rem -1.75rem rgba(43,108,163,.8)}
+.banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.banner::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(11,19,32,.05),rgba(11,19,32,.92))}
+.banner div{position:relative;z-index:1;padding:1.1rem 1.25rem}
+.banner .kicker{background:rgba(11,19,32,.7)}
+.banner h1{font-size:clamp(3rem,11.5vw,4.2rem);line-height:.95;margin:0}
+.group{font-size:1.05rem;letter-spacing:.16em;color:var(--turq);margin:2rem 0 .7rem}
+.qas{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:.75rem}
+.qa{border:1px solid var(--deep);border-radius:12px;background:#0E1A2C;padding:1rem 1.1rem 1.05rem}
+.qa:last-child:nth-child(odd){grid-column:1/-1}
+.qa h3{font:800 1.3rem/1.15 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;letter-spacing:.03em;
+margin:0 0 .35rem}
+.qa p{margin:0;color:var(--muted);line-height:1.5}
+.more{display:inline-block;margin-top:.55rem;font-weight:600;text-decoration:none}
+.more::after{content:" →"}
+.qa.top{margin:1.25rem 0 0;padding:1.2rem 1.25rem 1.3rem;border-color:rgba(79,209,197,.5);
+background:linear-gradient(165deg,#16406B,#0E2A47)}
+.qa.top h3{font-size:1.6rem}
+.qa.top p{color:#D6DEE8}
+.tag{display:inline-block;margin:0 0 .6rem;border-radius:999px;background:var(--turq);color:var(--navy);
+padding:.1rem .7rem;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-top:2rem}
+.cta h2{margin:0}
+.cta .btn{margin:0;padding:.85rem 1.4rem;font-size:1.08rem;border-radius:10px}
